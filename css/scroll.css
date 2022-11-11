@@ -1,0 +1,120 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Kanit', sans-serif;
+ font-family: 'Playfair Display', serif;
+ font-family: 'Poppins', sans-serif;
+
+}
+
+/* Foto de Fundo Começo Da Pág. */
+
+body{
+  background: #82d362;
+  background-image: url(../img/ESSA\ IMKAGEM.jpg);
+  background-position-x: center;
+
+}
+
+/* Tamanho Da Imagem Ajustada a Tela. */
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+section:nth-child(1){
+  color: #000000;
+  }
+section:nth-child(2){
+  text-align: center;
+  color: #000000;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,189,51,1) 100%);
+  border-radius: 28px;
+} 
+section:nth-child(3){
+  color: #000000;
+}
+section:nth-child(4){
+  color: #000000;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,189,51,1) 100%);
+  border-radius: 40px;
+}
+section .container{
+  margin: 100px;
+}
+
+/* Texto Da Página de Desmatamento */
+
+section h1{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+section h2{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+
+}
+section .text-container{
+   display: flex;
+   display: grid;
+   font-display: flex;
+   font-display: auto;
+   display: block;
+}
+
+/* Cards Animados */
+
+section .text-container .text-box{
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.904);
+  border-radius: 12px;
+  text-align: center;
+  width: auto;
+  height: min-content
+}
+section .text-container .text-box h3{
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: auto;
+  height: min-content
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
